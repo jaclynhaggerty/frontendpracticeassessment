@@ -1,0 +1,1 @@
+export const selectSpaces = (store) => store.space.spaces;

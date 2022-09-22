@@ -3,6 +3,8 @@ import selectToken from "../user/selectors";
 import { setStories } from "./slice"
 
 
+// request stories from backend & save them to the state
+// todo:set app loading state!
 export const loadStories = () => {
     return async (dispatch, getState) => {
         try {
