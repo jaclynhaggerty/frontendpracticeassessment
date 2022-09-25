@@ -7,7 +7,7 @@ import { setSpaces } from "./slice"
 export const loadSpaces = () => {
     return async (dispatch, getState) => {
         try {
-            const url = "http://localhost:4000/space"
+            const url = "http://localhost:4000/spaces"
             const token = getState(selectToken);
             const headers = {
                 headers: {

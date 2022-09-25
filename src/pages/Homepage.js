@@ -27,6 +27,7 @@ export const Homepage = () => {
         // Map over the spaces from the store and return the space component
         return (
           <Space key={spaceItem.id}
+            spaceId={spaceItem.id}
             title={spaceItem.title}
             description={spaceItem.description}
             backgroundColor={spaceItem.backgroundColor}

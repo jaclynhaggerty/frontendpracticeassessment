@@ -24,7 +24,8 @@ export const Navigation = () => {
         <span/>
       </Hamburger>
       <Menu open={open}>
-        <MenuLink to="/empty1">Empty 1</MenuLink>
+        {/* Found this code on stackoverflow, it shows the element if there is a token */}
+        {!!token && <MenuLink to="/my-space" >My Space</MenuLink>}
         <MenuLink to="/empty2">Empty 2</MenuLink>
         {token 
           ? <button onClick={() => dispatch(logOut())}>Logout</button> 

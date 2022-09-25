@@ -8,7 +8,7 @@ import { setStories } from "./slice"
 export const loadStories = () => {
     return async (dispatch, getState) => {
         try {
-            const url = "http://localhost:4000/story"
+            const url = "http://localhost:4000/stories"
             const token = getState(selectToken);
             const headers = {
                 headers: {
